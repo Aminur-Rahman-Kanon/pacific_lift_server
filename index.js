@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const cronjob = require('./utilities/utilities').cronJob;
 
 app.use(cors({ origin: ['http://localhost:3000', 'https://www.pacificliftbd.com', 'https://pacific-lift.onrender.com'] }));
 //route
@@ -26,7 +27,7 @@ app.listen('4000', (err) => {
     if (err) {
         throw new Error(err);
     }
-
+    cronjob();
     console.log('server is listening to 4000');
 });
 
