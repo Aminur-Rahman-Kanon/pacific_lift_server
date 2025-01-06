@@ -23,8 +23,8 @@ async function sendQuery(data) {
 
     try {
         const info = await transporter.sendMail({
-            from: '"Pacific Lift Service 👻" <pacificlift.info@gmail.com>', // sender address
-            to: "kanon754@gmail.com", // list of receivers
+            from: '"Pacific Lift Service" <pacificlift.info@gmail.com>', // sender address
+            to: "ar.mithu25@gmail.com", // list of receivers
             subject: "New Contact Query Received", // Subject line
             text: "A customer wants to contact. Please respond asap", // plain text body
             html: `<!DOCTYPE html>
